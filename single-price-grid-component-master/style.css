@@ -1,0 +1,176 @@
+:root {
+    --primaryCyan: hsl(179, 62%, 43%);
+    --primaryYellow: hsl(71, 73%, 54%);
+    --neutralGray: hsl(204, 43%, 93%);
+    --neutralBlue: hsl(218, 22%, 67%);
+
+    --normalWeight: 400;
+    --boldWeight: 700;
+
+}
+
+@font-face {
+    font-family: "Karla", sans-serif;
+    src: url("./Karla/Karla-VariableFont_wfht.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+font-family: "Karla", sans-serif;
+font-weight: var(--normalWeight);
+font-size: 16px;
+
+line-height: 1.5; 
+
+background-color: var(--neutralGray);
+}
+
+.container {
+max-width: 85%;
+margin: auto;
+margin-top: 3rem;
+margin-bottom: 3rem;
+box-shadow: 3px 3px 15px 6px rgba(0, 0, 0, 0.08);
+display: flex;
+flex-direction: column;
+}
+
+.container > * {
+    padding: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--neutralGray);
+}
+a:hover { 
+    color: var(--neutralGray);
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* Header Component */
+header {
+    background-color: white;
+}
+
+.font-title-header {
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+    color: var(--primaryCyan);
+    font-weight: var(--normalWeight);
+    margin-bottom: 1rem;
+}
+
+.font-subtitle-header {
+    font-weight: var(--normalWeight);
+    color: var(--primaryYellow);
+    font-size: clamp(1rem, 3.5vw, 1.5rem);
+    margin-bottom: 1rem;
+}
+
+.font-text-header {
+    color:  hsl(0, 0%, 80%);
+    font-size: clamp(0.5rem, 3.5vw, 1.5rem);
+}
+
+/* Main Component */
+main {
+    background-color: var(--primaryCyan);
+
+}
+
+.font-title-main {
+    color: white;
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+    margin-bottom: 1rem;
+}
+
+.pricepermonth {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+.font-dollar-main {
+    color: var(--neutralGray);
+    font-size: clamp(2.5rem, 7vw, 4rem);
+    color: white;
+}
+.font-small-main {
+    color: hsl(179, 56%, 72%);
+    font-size: clamp(0.5rem, 4vw, 1.5rem);
+}
+
+.font-main {
+    color: var(--neutralGray);
+    margin-bottom: 1.5rem;
+    font-size: clamp(0.5rem, 4vw, 1.5rem);
+}
+
+.signup {
+    display: block;
+    background-color: var(--primaryYellow);
+    text-align: center;
+    border-radius: 6px;  
+    font-size: clamp(1rem, 4vw, 2rem);;
+    padding: 0.7rem;
+    box-shadow: 3px 3px 15px 6px rgba(0, 0, 0, 0.08);
+    
+}
+
+.signup:hover {
+    background-color: hsl(71, 83%, 44%); /* Slightly darker yellow */
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Footer Component */
+footer {
+    background-color: hsl(179, 62%, 52%);
+}
+
+.font-title-footer {
+    color: white;
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+    margin-bottom: 1rem;
+}
+
+.link {
+    color:  hsl(179, 70%, 78%);
+    font-size: clamp(0.5rem, 4vw, 1rem);
+}
+
+/* Larger screens: Introduce mediaquery and grid */
+@media (min-width: 600px) { 
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "header header"
+        "main footer";
+        max-width: 900px;
+        margin-top: 15vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    header {
+        grid-area: header;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
+
