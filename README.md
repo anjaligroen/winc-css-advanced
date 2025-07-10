@@ -1,33 +1,27 @@
-Hello! Thank you for grading my assignment, and I would love to hear any feedback! 
+# Winc Academy: CSS Advanced
 
-### Built with
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
+In this Winc Academy project, I deepened my understanding of modern CSS techniques. The exercises focused on improving layout skills, responsive design, and visual styling using tools like `flexbox`, `media queries`, and `CSS transitions`.
 
-### What I learned
+## Learning goals
 
-- How to make sense of the clamp method to make my fonts more size responsive. 
-- How to make conscious choices in how to use the semantics in the HTML, and what type of elements to use. 
-- How to write a simple CSS reset in the normalize.css file. 
-- What the difference is between the :root and body selector in CSS and have tried to use best practices. 
-- A bit better how to use (auto) margins. 
-- How to use proper workflow as indicated in the course and proper scoping as indicated in the course. 
-- Apparently when specifying the grid-area value you do not use " " marks. 
-- How to use CSS selectors such as the > and the *. 
+- Apply advanced CSS selectors and combinators
+- Structure layouts with flexbox
+- Make pages responsive using media queries
+- Use pseudo-classes and pseudo-elements effectively
+- Create smooth hover and transition effects
 
+## Technologies used
 
-### Continued development
+- HTML5
+- CSS3 (Flexbox, Media Queries, Transitions)
 
-I notice that there is always something to be improved and bettered. I hope to get more aquainted with the different properties and ways of CSS so I can work more practical and quicker. For now I am still nervous about using different types of size units and I know there are a lot of ways in which I can improve my understanding and use of flexbox. In this exercise I did not get to use the wrap value, or any of the flex-item properties.  
+## What I built
 
-### Useful resources
+- A fully styled and responsive webpage
+- Clean layout using semantic HTML
+- Interactive UI elements with hover effects
 
-- https://css-generator.netlify.app/box-shadow/ - I used this CSS generator to write my box shadows. 
-- Chat GPT - I used to figure out why my grid-area did not work. Apparently when specifying the grid-area value you do not use " " marks.
+## Result
 
-## Author
-Anjali  Groen (find me on Slack ^-^ ) 
-
+A responsive and visually appealing layout that demonstrates solid CSS fundamentals and styling best practices.
 
